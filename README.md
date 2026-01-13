@@ -1,65 +1,51 @@
-🧬 Molecular Graph Test
+# Molecular Side Effect Predictor™ 💊
 
-This project demonstrates a simple implementation of Graph Neural Networks (GNNs) on molecular data.
-It focuses on how molecules can be represented as graphs — where atoms are nodes and bonds are edges — and how a GNN can process this graph structure to learn basic molecular representations.
+A proprietary machine learning application designed to predict potential side effects of drug molecules based on their molecular formulas. Developed by [remilsalim](https://github.com/remilsalim).
 
-🚀 Overview
+## Overview
 
-The notebook Molecular_Graph_Test1.ipynb provides a minimal example of:
+The **Molecular Side Effect Predictor™** leverages a Random Forest classifier trained on chemical data from PubChem to provide multi-label predictions of side effects. This tool is part of the **Molecular Graph™** product suite.
 
-Importing and visualizing molecular structures.
+## Features
 
-Converting molecules into graph-based representations.
+- **Molecular Formula Search**: Interactive autocomplete search for chemical formulas (e.g., `C6H12O6`, `H3N`).
+- **Real-time Inference**: Powered by a Random Forest model with automatic feature extraction.
+- **Engaging UI**: Modern Streamlit interface with dark mode support, proprietary branding, and funny chemistry facts during processing.
+- **Reference Data**: Provides atomic details and database matching for searched compounds.
 
-Building and testing a simple Graph Neural Network (GNN) model.
+## Project Structure
 
-Understanding the relationship between molecular structure and features through graph learning.
+- `app.py`: The main Streamlit application.
+- `Molecular_Graph_Test1.ipynb`: Research notebook containing model training and data preparation logic.
+- `my_pickles_extracted/`: Directory containing pre-trained models (`model.joblib`), encoders (`mlb.joblib`), and processed datasets.
+- `drugs.pkl`, `side_effects.pkl`: Primary data sources.
 
-🧩 Key Concepts
+## Installation & Usage
 
-Molecular Graphs: Molecules are represented as graphs, enabling structural learning.
+### Prerequisites
 
-Nodes: Represent atoms with features like atomic number or valence.
+Ensure you have Python installed. It is recommended to use a virtual environment.
 
-Edges: Represent chemical bonds between atoms.
+### Dependencies
 
-Graph Neural Networks (GNNs): Learn node and graph-level embeddings from molecular data.
+Install the required packages:
 
-🧰 Requirements
+```bash
+pip install streamlit joblib pandas scikit-learn rdkit-pypi torch torch-geometric
+```
 
-To run the notebook, install the following dependencies:
+### Running the App
 
-pip install torch torch-geometric rdkit matplotlib numpy
+Navigate to the project directory and run:
 
+```bash
+streamlit run app.py
+```
 
-Note: You may need to install torch-scatter, torch-sparse, and other PyTorch Geometric dependencies manually depending on your system and CUDA version.
+## Ownership & Trademark
 
-📘 Usage
+**Molecular Graph™** and **Molecular Side Effect Predictor™** are proprietary products.
+© 2026 [remilsalim](https://github.com/remilsalim). All rights reserved.
 
-Clone this repository
-
-
-Launch Jupyter Notebook:
-
-jupyter notebook Molecular_Graph_Test1.ipynb
-
-
-Run all cells to:
-
-Import molecular data
-
-Visualize molecule graphs
-
-Build and train a GNN
-
-Observe basic model behavior
-
-🧠 Learning Outcome
-
-This notebook is designed for educational purposes — ideal for students or researchers beginning to explore:
-
-Graph-based molecular representations
-
-Fundamental GNN workflows
-
-How chemical structures can be modeled computationally
+---
+*Stay Curious. Have all the solutions!* 🧪

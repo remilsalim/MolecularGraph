@@ -1,0 +1,19 @@
+# Models and Pickles
+my_pickles_extracted/
+my_pickles.zip
+*.joblib
+*.pth
+*.pkl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
